@@ -1,0 +1,132 @@
+.productRangeParent {
+  padding: 5rem 0;
+  background: var(--surface-color);
+}
+
+.productRangeWrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.productRangeContentWrapper {
+  max-width: 42rem;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.productRangeHeading {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+
+  color: var(--primary-color);
+}
+
+.productRangeDescription {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+.productRangeGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  margin-top: 3rem;
+}
+
+.productRangeCard {
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #e6f4ff;
+  border-radius: 1.5rem;
+  background: var(--card-background);
+  box-shadow: var(--shadow-soft);
+  transition: 0.35s ease;
+}
+
+.productRangeCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+}
+
+.productRangeImageWrapper {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+
+  background: var(--secondary-color);
+}
+
+.productRangeImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.35s ease;
+}
+
+.productRangeCard:hover .productRangeImage {
+  transform: scale(1.05);
+}
+
+.productRangeCardContent {
+  padding: 1.5rem;
+}
+
+.productRangeCardHeading {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  color: var(--primary-color);
+}
+
+.productRangeCardDescription {
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
+
+  color: var(--muted-foreground);
+}
+
+@media screen and (max-width: 992px) {
+  .productRangeGridWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productRangeHeading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .productRangeParent {
+    padding: 2rem 0;
+  }
+
+  .productRangeGridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .productRangeHeading {
+    font-size: 1.75rem;
+  }
+
+  .productRangeDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .productRangeWrapper {
+    padding: 0 1rem;
+  }
+
+  .productRangeCardContent {
+    padding: 1.25rem;
+  }
+}

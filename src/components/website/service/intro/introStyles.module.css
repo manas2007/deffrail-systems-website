@@ -1,0 +1,74 @@
+.introParent {
+  padding: 5rem 0;
+  background: url("/assets/propertyDetail/lightweightSolutions/Light-Bg.png")
+}
+
+.introWrapper {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  text-align: center;
+}
+
+.introHeading {
+  width: 70%;
+  margin: 0 auto 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+
+.introContentWrapper {
+  width: 100%;
+}
+
+.introDescription {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+@media screen and (max-width: 992px) {
+  .introHeading {
+    width: 90%;
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introParent {
+    padding: 4rem 0;
+  }
+
+  .introHeading {
+    width: 100%;
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .introDescription {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .introWrapper {
+    padding: 0 1rem;
+  }
+
+  .introHeading {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+
+  .introDescription {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+}

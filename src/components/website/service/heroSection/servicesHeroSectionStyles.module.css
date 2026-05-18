@@ -1,0 +1,102 @@
+.serviceHeroSectionParent {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+
+  background: #000000;
+}
+
+.serviceHeroBackgroundImage {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.serviceHeroGradientOverlay {
+  position: absolute;
+  background: black;
+}
+
+.serviceHeroBottomOverlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(var(--primary-rgb), 0.8),
+    rgba(var(--primary-rgb), 0.3),
+    transparent
+  );
+}
+
+.serviceHeroContentContainer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 78svh;
+  text-align: center;
+}
+
+.serviceHeroContentWrapper {
+  padding: 0 1.5rem;
+}
+
+.serviceHeroHeading {
+  margin-top: 1.5rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 0.95;
+  color: #ffffff;
+}
+
+.serviceHeroDescription {
+  max-width: 36rem;
+  margin: 1.5rem auto 0;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width: 992px) {
+  .serviceHeroHeading {
+    font-size: 3.75rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .serviceHeroSectionParent,
+  .serviceHeroContentContainer {
+    min-height: 70svh;
+  }
+
+  .serviceHeroHeading {
+    font-size: 3rem;
+  }
+
+  .serviceHeroDescription {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .serviceHeroHeading {
+    font-size: 2.5rem;
+  }
+
+  .serviceHeroDescription {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  .serviceHeroContentWrapper {
+    padding: 0 1rem;
+  }
+}

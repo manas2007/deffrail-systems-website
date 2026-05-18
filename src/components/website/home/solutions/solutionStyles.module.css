@@ -1,0 +1,172 @@
+.solutionsParent {
+  padding: 5rem 0 7rem;
+  background: var(--background-color);
+}
+
+.solutionsWrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.solutionsContentWrapper {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.solutionsTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #2e78bc;
+  padding: 0.3rem 0.8rem;
+  background: #e6f4ff;
+  border-radius: 1rem;
+  color: var(--accent-color);
+}
+
+.solutionsHeading {
+  margin-top: 1rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--primary-color);
+  text-wrap: balance;
+}
+
+.solutionsDescription {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+.solutionsButton {
+  margin-top: 2rem !important;
+  border-radius: 999px !important;
+}
+
+.solutionsGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  margin-top: 3.5rem;
+}
+
+.solutionsCard {
+  overflow: hidden;
+  border: 2px solid #e6f4ff;
+  border-radius: 1.5rem;
+  background: var(--card-background);
+  box-shadow: var(--shadow-soft);
+  transition: 0.4s ease;
+}
+
+.solutionsCard:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-card);
+}
+
+.solutionsImageWrapper {
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+
+  background: var(--secondary-color);
+}
+
+.solutionsImage {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: 0.4s ease;
+}
+
+.solutionsCard:hover .solutionsImage {
+  transform: scale(1.05);
+}
+
+.solutionsCardContent {
+  padding: 1.5rem;
+}
+
+.solutionsCardHeading {
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: var(--primary-color);
+}
+
+.solutionsCardDescription {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  color: var(--muted-foreground);
+}
+
+.solutionsCardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  margin-top: 1rem;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  color: var(--accent-color);
+
+  transition: 0.3s ease;
+}
+
+.solutionsCardLink:hover {
+  gap: 0.75rem;
+}
+
+@media screen and (max-width: 992px) {
+  .solutionsGridWrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutionsHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .solutionsParent {
+    padding: 4rem 0 5rem;
+  }
+
+  .solutionsGridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .solutionsHeading {
+    font-size: 2rem;
+  }
+
+  .solutionsDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .solutionsWrapper {
+    padding: 0 1rem;
+  }
+
+  .solutionsHeading {
+    font-size: 1.75rem;
+  }
+
+  .solutionsCardContent {
+    padding: 1.25rem;
+  }
+}

@@ -1,0 +1,90 @@
+.visionParent {
+  width: 100%;
+}
+
+.visionWrapper {
+  display: flex;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+}
+
+.visionContentWrapper {
+  position: relative;
+  width: 60%;
+  padding: 3rem;
+  z-index: 10;
+  transform: translateX(1rem);
+  border: 1px solid #2563eb;
+  border-radius: 1.1rem;
+  background: #e6f4ff;
+}
+
+.visionDescription {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: var(--primary-color);
+}
+
+.visionFloatingImage {
+  width: 5rem;
+  position: absolute;
+  top: -2.5rem;
+  left: 3rem;
+}
+
+.visionMainImage {
+  width: 40%;
+  border-radius: 12px;
+  object-fit: cover;
+  position: relative;
+  z-index: 5;
+  transform: translateX(-3rem);
+}
+
+.visionBottomImage {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .visionWrapper {
+    flex-direction: column;
+    gap: 2rem;
+
+    width: 90%;
+  }
+
+  .visionContentWrapper,
+  .visionMainImage {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .visionContentWrapper {
+    padding: 2rem;
+  }
+
+  .visionDescription {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .visionWrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .visionContentWrapper {
+    padding: 1.5rem;
+    transform: unset;
+  }
+
+  .visionMainImage {
+    transform: unset;
+  }
+}

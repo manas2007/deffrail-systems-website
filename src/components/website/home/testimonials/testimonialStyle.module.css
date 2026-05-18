@@ -1,0 +1,150 @@
+.testimonialsParent {
+  padding: 5rem 0 7rem;
+  background: var(--background-color);
+}
+
+.testimonialsWrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.testimonialsContentWrapper {
+  max-width: 42rem;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.testimonialsTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid #2e78bc;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  background: #e6f4ff;
+  
+}
+
+.testimonialsHeading {
+  margin-top: 1rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--primary-color);
+}
+
+.testimonialsDescription {
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+.testimonialsGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+
+  margin-top: 3.5rem;
+}
+
+.testimonialsCard {
+  position: relative;
+  overflow: hidden;
+  padding: 1.75rem;
+  border-radius: 1.5rem;
+  background-color:#1b3b5f ;
+  color: #ffffff;
+  box-shadow: var(--shadow-card);
+  transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonialsCard:hover {
+  transform: translateY(-4px);
+}
+
+.testimonialsQuote {
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonialsFooter {
+  position: relative;
+
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.testimonialsName {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.testimonialsRole {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  color: #2e78bc;
+}
+
+.cardLogo {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .testimonialsGridWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonialsHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .testimonialsParent {
+    padding: 4rem 0 5rem;
+  }
+
+  .testimonialsHeading {
+    font-size: 2rem;
+  }
+
+  .testimonialsDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .testimonialsWrapper {
+    padding: 0 1rem;
+  }
+
+  .testimonialsHeading {
+    font-size: 1.75rem;
+  }
+
+  .testimonialsCard {
+    padding: 1.5rem;
+  }
+}

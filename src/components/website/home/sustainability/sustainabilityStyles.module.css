@@ -1,0 +1,219 @@
+.sustainabilityParent {
+  padding: 5rem 0 7rem;
+  background: var(--surface-color);
+}
+
+.sustainabilityWrapper {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sustainabilityContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+
+.sustainabilityImageWrapper {
+  position: relative;
+}
+
+.sustainabilityImageContainer {
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: var(--shadow-elegant);
+}
+
+.sustainabilityImage {
+  width: 100%;
+  /* aspect-ratio: 4 / 5; */
+  object-fit: cover;
+  border-radius: 1.5rem;
+  display: block;
+}
+
+.sustainabilityImpactCard {
+  position: absolute;
+  bottom: -1rem;
+  right: -1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  color: white;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-card);
+}
+
+.sustainabilityImpactContent {
+  display: flex;
+  align-items: center;
+}
+
+.sustainabilityImpactIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: #13853c;
+}
+
+.sustainabilityImpactIcon {
+  width: 8rem;
+}
+
+.sustainabilityImpactSubHeading {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--accent-color);
+}
+
+.sustainabilityImpactHeading {
+  margin-top: 0.25rem;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+
+  color: var(--primary-color);
+}
+
+.sustainabilityContentWrapper {
+  width: 100%;
+}
+
+.sustainabilityTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #13853c;
+  border: 1px solid #13853c;
+  padding: 0.3rem 0.8rem;
+  border-radius: 3rem;
+  background: #e6f0eb;
+}
+
+.sustainabilityHeading {
+  margin-top: 1rem;
+
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  color: var(--primary-color);
+
+  text-wrap: balance;
+}
+
+.sustainabilityCardsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  margin-top: 2rem;
+}
+
+.sustainabilityCard {
+  display: flex;
+  align-items: flex-start;
+
+  padding: 1.25rem 0;
+
+  border-radius: 1rem;
+
+  background: var(--card-background);
+
+  box-shadow: var(--shadow-soft);
+}
+
+.sustainabilityCardIconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  min-width: 4.5rem;
+  height: 4.5rem;
+  margin-right: 1rem;
+  border-radius: 0.75rem;
+  background: #e6f0eb;
+  border: 1px solid #13853c;
+}
+
+.sustainabilityCardIcon {
+  width: 2rem;
+}
+
+.sustainabilityCardHeading {
+  font-size: 1.2rem;
+  font-weight: 600;
+
+  color: var(--primary-color);
+}
+
+.sustainabilityCardDescription {
+  margin-top: 0.3rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+@media screen and (max-width: 992px) {
+  .sustainabilityContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .sustainabilityHeading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sustainabilityParent {
+    padding: 4rem 0 2rem;
+  }
+
+  .sustainabilityHeading {
+    font-size: 2rem;
+  }
+
+  .sustainabilityImpactCard {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sustainabilityWrapper {
+    padding: 0 1rem;
+  }
+
+  .sustainabilityHeading {
+    font-size: 1.75rem;
+  }
+
+  .sustainabilityCard {
+
+    flex-direction: column;
+  }
+
+  .sustainabilityCardIconWrapper {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .sustainabilityImpactContent {
+    align-items: flex-start;
+  }
+
+  .sustainabilityImpactIconWrapper {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}

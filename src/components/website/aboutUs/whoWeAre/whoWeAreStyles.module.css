@@ -1,0 +1,215 @@
+.whoWeAreParent {
+  margin-top: 4rem;
+}
+
+.whoWeAreWrapper {
+  width: 100%;
+}
+
+.whoWeAreTopContainer {
+  display: flex;
+
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 0;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.whoWeAreHeadingWrapper {
+  width: 40%;
+}
+
+.whoWeAreTag {
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #e6f4ff;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #2e78bc;
+  color: var(--primary-color);
+}
+
+.whoWeAreHeading {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.whoWeAreContentWrapper {
+  width: 60%;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  color: var(--muted-foreground);
+}
+
+.whoWeAreDescription {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.whoWeAreCarouselWrapper {
+  position: relative;
+
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+  transform: translateY(7rem);
+  scrollbar-width: none;
+}
+
+.whoWeAreCarouselWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.whoWeAreCarouselImage {
+  margin-right: 1rem;
+
+  border-radius: 10px;
+
+  object-fit: cover;
+}
+
+.whoWeAreBottomSection {
+  padding: 10rem 0 5rem;
+
+  background: #1b3b5f;
+
+  color: #ffffff;
+}
+
+.whoWeAreBottomWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.whoWeAreBottomTag {
+  width: fit-content;
+  margin-bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #2e78bc;
+  border-radius: 999px;
+  font-size: 12px;
+  padding: 0.3rem 0.8rem;
+  color: #2e78bc;
+}
+
+.whoWeAreBottomHeading {
+  width: 70%;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 600;
+}
+
+.whoWeAreBottomDescription {
+  padding: 1rem 0;
+
+  font-size: 1rem;
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.whoWeAreListWrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 1rem 0;
+}
+
+.whoWeAreListItemWrapper {
+  margin-bottom: 0.5rem;
+}
+
+.whoWeAreListItem {
+  width: fit-content;
+  margin-right: 1rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid #2e78bc;
+  border-radius: 999px;
+
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .whoWeAreTopContainer {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .whoWeAreHeadingWrapper,
+  .whoWeAreContentWrapper {
+    width: 100%;
+  }
+
+  .whoWeAreContentWrapper {
+    margin-top: 2rem;
+  }
+
+  .whoWeAreHeading {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  .whoWeAreBottomWrapper {
+    width: 90%;
+  }
+
+  .whoWeAreBottomHeading {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .whoWeAreHeading {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .whoWeAreContentWrapper {
+    font-size: 1rem;
+  }
+
+  .whoWeAreBottomHeading {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+
+  .whoWeAreListItem {
+    font-size: 0.95rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .whoWeAreTopContainer,
+  .whoWeAreBottomWrapper {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .whoWeAreHeading {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+
+  .whoWeAreBottomSection {
+    padding: 9rem 0 4rem;
+  }
+
+  .whoWeAreBottomHeading {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .whoWeAreListItem {
+    padding: 0.5rem 1.25rem;
+  }
+}

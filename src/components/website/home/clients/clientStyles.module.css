@@ -1,0 +1,110 @@
+.clientsParent {
+  margin: 4rem 0;
+  background: var(--background-color);
+}
+
+.clientsWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clientsContentWrapper {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.clientsTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #e6f4ff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #2e78bc;
+  color: var(--primary-color);
+}
+
+.clientsHeading {
+  margin-top: 0.75rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.clientsDescription {
+  margin-top: 0.75rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: var(--muted-foreground);
+}
+
+.clientsLogoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin-top: 2.5rem;
+}
+
+.clientsLogo {
+  width: 5rem;
+  object-fit: contain;
+
+  transition: 0.3s ease;
+}
+
+.clientsLogo:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 992px) {
+  .clientsWrapper {
+    width: 90%;
+  }
+
+  .clientsLogoWrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .clientsHeading {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .clientsParent {
+    margin: 3rem 0;
+  }
+
+  .clientsHeading {
+    font-size: 1.75rem;
+  }
+
+  .clientsLogo {
+    width: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .clientsWrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .clientsLogoWrapper {
+    gap: 1.5rem;
+  }
+
+  .clientsLogo {
+    width: 4rem;
+  }
+
+  .clientsHeading {
+    font-size: 1.5rem;
+  }
+}

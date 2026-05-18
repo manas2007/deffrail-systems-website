@@ -1,0 +1,162 @@
+.aboutHeroSectionParent {
+  width: 100%;
+  background-image: url("/assets/aboutUs/Header-Img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutHeroSectionWrapper {
+  position: relative;
+  width: 80%;
+  min-height: 90vh;
+  margin: 0 auto;
+  border: 1px solid var(--border-color);
+}
+
+.aboutHeroContentWrapper {
+  position: absolute;
+  top: 50%;
+    color: white;
+  width: 50%;
+
+  transform: translateY(-50%);
+}
+
+.aboutHeroTag {
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #e6f4ff;
+color: black;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.aboutHeroHeading {
+  font-size: 4.5rem;
+  line-height: 5rem;
+  font-weight: 700;
+    
+  color: var(--primary-color);
+}
+
+.aboutHeroDescription {
+  padding: 1rem 0;
+
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+
+  color: var(--muted-foreground);
+}
+
+.aboutHeroButtonWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aboutHeroPrimaryButton {
+  padding: 0.5rem 1rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2e78bc;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.aboutHeroPrimaryButton:hover {
+  opacity: 0.9;
+}
+
+.aboutHeroSecondaryButton {
+  padding: 0.5rem 1rem;
+
+  border: none;
+  border-radius: 10px;
+
+  background: lightgrey;
+
+  color: #000000;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.aboutHeroSecondaryButton:hover {
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 992px) {
+  .aboutHeroSectionWrapper {
+    width: 90%;
+  }
+
+  .aboutHeroContentWrapper {
+    width: 70%;
+  }
+
+  .aboutHeroHeading {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutHeroSectionWrapper {
+    min-height: 70vh;
+  }
+
+  .aboutHeroContentWrapper {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .aboutHeroHeading {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .aboutHeroDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutHeroSectionWrapper {
+    width: calc(100% - 2rem);
+    height: 80vh;
+  }
+
+  .aboutHeroContentWrapper {
+    padding: 0 1rem;
+  }
+
+  .aboutHeroHeading {
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+  }
+
+  .aboutHeroDescription {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
+
+  .aboutHeroButtonWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .aboutHeroPrimaryButton,
+  .aboutHeroSecondaryButton {
+    width: 100%;
+  }
+}

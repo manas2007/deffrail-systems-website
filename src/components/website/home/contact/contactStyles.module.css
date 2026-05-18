@@ -1,0 +1,115 @@
+.contactParent {
+  width: 100%;
+}
+
+.contactWrapper {
+  width: 80%;
+  margin: 4rem auto;
+
+  border-radius: 20px;
+
+  background: url("/assets/home/CTA-Bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contactContainer {
+  position: relative;
+  overflow: hidden;
+
+  width: 60%;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+
+  border-radius: 1.5rem;
+
+  background-image: var(--gradient-dark);
+
+  text-align: center;
+
+  box-shadow: var(--shadow-elegant);
+}
+
+.contactHeading {
+  margin-top: 1rem;
+
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+.contactDescription {
+  margin-top: 1.25rem;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.contactButtonWrapper {
+  margin-top: 2rem;
+}
+
+.partnersTag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: #e6f4ff;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #2e78bc;
+  color: var(--primary-color);
+}
+
+@media screen and (max-width: 992px) {
+  .contactContainer {
+    width: 80%;
+    padding: 5rem 2rem;
+  }
+
+  .contactHeading {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactWrapper {
+    width: 90%;
+  }
+
+  .contactContainer {
+    width: 100%;
+    padding: 4rem 1.5rem;
+  }
+
+  .contactHeading {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .contactDescription {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contactWrapper {
+    width: calc(100% - 2rem);
+    margin: 3rem auto;
+  }
+
+  .contactContainer {
+    padding: 3.5rem 1rem;
+  }
+
+  .contactHeading {
+    font-size: 1.75rem;
+    line-height: 2.2rem;
+  }
+}
