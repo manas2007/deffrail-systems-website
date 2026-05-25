@@ -332,9 +332,10 @@ export const SERVICES_DATA = {
         intro: {
             heading: "Engineered for Challenging and Remote Environments",
             content: [
-                "Deffrail Systems develops advanced lightweight composite infrastructure solutions suitable for remote, high altitude, and demanding environmental applications. Built using durable FRP and rotational moulding technologies, these systems are designed to support operational reliability in harsh climatic conditions.",
-                "The lightweight construction enables easier transportation and deployment in locations where conventional infrastructure systems can be difficult to install and maintain. Corrosion resistance, structural durability, and low maintenance performance make these solutions suitable for government, institutional, industrial, and infrastructure requirements operating in challenging terrains.",
-                "Focused on long term functionality and engineering efficiency, Deffrail Systems delivers infrastructure solutions built to perform in environments where durability and reliability are essential.",
+                "Deffrail Systems develops advanced insulated infrastructure solutions engineered for remote, high-altitude, and demanding environmental applications. Built with a durable PPGI outer skin, GRP/FRP inner skin, and high-performance PIR foam insulation, these systems are designed to deliver long-term operational reliability in harsh climatic conditions.",
+                "Engineered to withstand up to 1.5 meter snow load and designed for Seismic Zone 5 resistance, the structures ensure superior structural stability and performance in extreme terrains and disaster-prone regions.",
+                "The lightweight modular construction enables easier transportation, faster deployment, and reduced on-site installation challenges where conventional infrastructure systems are difficult to execute and maintain. Corrosion resistance, thermal efficiency, and low-maintenance performance make these solutions ideal for government, institutional, industrial, and critical infrastructure applications.",
+                "Focused on durability, insulation efficiency, and engineering precision, Deffrail Systems delivers infrastructure solutions built to perform where reliability is essential."
             ],
             image: "/images/services/high-altitude-shelters/intro.jpg",
         },
