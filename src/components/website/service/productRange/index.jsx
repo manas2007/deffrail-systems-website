@@ -1,8 +1,15 @@
+import { useState } from "react";
 import styles from "./productRangeStyles.module.css";
+import ProductModal from "../../global/modal/product";
 
 const ProductRange = (props) => {
 
   const { SERVICES_DATA } = props;
+  const [activeProduct, setActiveProduct] = useState(null);
+
+  const onProductClick = (product) => {
+    setActiveProduct(product);
+  }
 
   return (
     <section className={styles.productRangeParent}>
@@ -27,6 +34,7 @@ const ProductRange = (props) => {
           {SERVICES_DATA.productListing.map((card) => (
             <article
               key={card.title}
+              onClick={() => onProductClick(card)}
               className={styles.productRangeCard}
             >
 
@@ -61,6 +69,8 @@ const ProductRange = (props) => {
         </div>
 
       </div>
+
+      {activeProduct && <ProductModal product={activeProduct}  setShowModal={setActiveProduct}   /> }
 
     </section>
   );

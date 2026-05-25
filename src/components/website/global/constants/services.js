@@ -37,8 +37,12 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "Thermally Insulated Water Tanks",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Advanced insulated water tanks designed to maintain stable water temperature in extreme weather conditions.",
                 image: "/assets/propertyDetail/waterManagement/Thermally-Insulated-Water-Tanks.png",
+                about: [
+                    "Deffrail Systems’ Thermally Insulated Water Tanks are engineered to maintain stable water temperatures across extreme weather conditions. Built using advanced rotomoulding technology with high-performance NBR insulation, these tanks help retain cooler water during summers and warmer water during winters, reducing temperature fluctuations for residential, commercial, industrial, and defense applications.",
+                    "Manufactured using 100% virgin food-grade material with UV-resistant outer layers, the tanks are designed for durability, hygiene, and long operational life. Their seamless construction prevents leakage while minimizing maintenance requirements. These insulated tanks are ideal for hotels, hospitals, housing societies, industrial facilities, and remote high-temperature or cold-climate regions where consistent water temperature is essential."
+                ]
             }
         ]
     },
@@ -80,13 +84,21 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "Packaged Sewage Waste Treatment Plant (PSTP)",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Compact sewage treatment systems designed for efficient wastewater recycling and reuse.",
                 image: "/assets/propertyDetail/sewageManagement/PSTP.png",
+                about: [
+                    "The Packaged Sewage Treatment Plant (PSTP) is a compact and fully integrated wastewater treatment solution designed to efficiently process sewage from residential, commercial, industrial, and institutional facilities. Developed using advanced FRP construction and MBBR (Moving Bed Biofilm Reactor) technology, the system ensures effective reduction of BOD, COD, suspended solids, and harmful contaminants.",
+                    "Its modular underground design allows for easy installation while occupying minimal space. The treatment process includes screening, biological treatment, clarification, and optional tertiary filtration for water reuse applications such as flushing, landscaping, and industrial processes. Built for durability and corrosion resistance, the PSTP offers low maintenance requirements, long service life, and environmentally sustainable wastewater management."
+                ]
             },
             {
                 title: "Anaerobic FRP Septic Tank (AST)",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Leak-proof FRP septic tanks engineered for safe and hygienic wastewater management.",
                 image: "/assets/propertyDetail/sewageManagement/AST.png",
+                about: [
+                    "The Anaerobic FRP Septic Tank is a durable and leak-proof wastewater management system designed as a modern alternative to conventional RCC septic tanks. Manufactured using advanced filament winding FRP technology, these tanks provide superior corrosion resistance, structural strength, and long-lasting performance in demanding environments.",
+                    "The system operates through anaerobic digestion, where organic waste is naturally broken down by bacteria, reducing sludge formation and minimizing odor generation. Lightweight yet highly durable, the tanks are easy to transport and install with minimal civil work. Suitable for residential complexes, hotels, institutions, labor camps, and remote locations, the AST delivers safe, hygienic, and low-maintenance sewage disposal solutions."
+                ]
             },
         ],
     },
@@ -125,18 +137,30 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "Adapter",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Lightweight composite adapters built for strength, durability, and industrial performance.",
                 image: "/assets/propertyDetail/lightweightSolutions/Adapter.png",
+                about: [
+                    "Deffrail Systems’ composite adapters are precision-engineered lightweight components designed for high-strength industrial and infrastructure applications. Manufactured using advanced composite materials, these adapters offer excellent durability, corrosion resistance, and dimensional stability while significantly reducing overall system weight.",
+                    "Their robust yet lightweight construction makes them ideal for defense, railway, transportation, and industrial utility applications where performance, reliability, and long operational life are critical."
+                ]
             },
             {
                 title: "Strap",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "High-strength composite straps designed for secure fastening and heavy-duty applications.",
                 image: "/assets/propertyDetail/lightweightSolutions/Strap.png",
+                about: [
+                    "The composite strap solutions are designed to provide secure fastening and support in heavy-duty industrial and transportation environments. Engineered using high-strength composite materials, these straps deliver superior load-bearing performance while remaining lightweight and corrosion-resistant.",
+                    "Designed for harsh operating conditions, the straps ensure long-term durability with minimal maintenance requirements, making them suitable for railway systems, industrial equipment, defense applications, and custom engineering solutions."
+                ]
             },
             {
                 title: "Composite Water Tanks (Under Carriage)",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Lightweight undercarriage composite tanks designed for mobile and railway water storage systems.",
                 image: "/assets/propertyDetail/lightweightSolutions/Under-Carriage.png",
+                about: [
+                    "The Composite Under Carriage Water Tanks are specially engineered lightweight storage systems designed for railway, defense, and mobile infrastructure applications. Manufactured using high-strength FRP composite materials, these tanks provide exceptional durability, leak resistance, and structural integrity under dynamic operating conditions.",
+                    "Their lightweight construction helps reduce overall vehicle load while maintaining high storage efficiency and long-term reliability. Designed to withstand vibration, weather exposure, and harsh environments, these tanks are ideal for applications requiring safe and efficient onboard water storage solutions."
+                ]
             },
         ],
     },
@@ -176,33 +200,57 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "Dust Bins",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Durable roto-moulded dust bins designed for efficient indoor and outdoor waste management.",
                 image: "/assets/propertyDetail/warehousing/Dustbins.png",
+                about: [
+                    "Deffrail Systems’ dust bins are manufactured using premium roto-moulded UV-stabilized material for long-lasting performance in residential, commercial, industrial, and municipal environments. Designed for durability and hygiene, the bins feature smooth interiors for easy cleaning and maintenance while offering excellent resistance against corrosion, weather exposure, and daily wear.",
+                    "Available in multiple sizes and variants including wheeled, pedestal, cylindrical, and pole-mounted models, these bins provide efficient waste management solutions for both indoor and outdoor applications."
+                ]
             },
             {
                 title: "Trolley Container (Processing Trolley)",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Heavy-duty processing trolleys designed for efficient industrial material handling.",
                 image: "/assets/propertyDetail/warehousing/Trolley-Container.png",
+                about: [
+                    "The Processing Trolley is a heavy-duty material handling solution designed for industrial processing, storage, and transportation operations. Manufactured using seamless roto-moulded construction, the trolley offers high strength, chemical resistance, and easy mobility while remaining lightweight and maintenance-free.",
+                    "Its smooth interior surface ensures hygienic handling of materials, making it suitable for food processing, textile, manufacturing, and industrial applications where durability and operational efficiency are essential."
+                ]
             },
             {
                 title: "Pallet Containers",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Robust pallet containers designed for industrial storage and material transportation.",
                 image: "/assets/propertyDetail/warehousing/Pallet-Containers.png",
+                about: [
+                    "The Pallet Containers are robust storage and material handling solutions engineered for industrial and warehouse environments. Manufactured from durable food-grade roto-moulded material, these containers provide excellent impact resistance, chemical resistance, and long service life.",
+                    "Their lightweight yet sturdy design enables efficient storage, stacking, and transportation of materials while maintaining ease of handling. Suitable for logistics, manufacturing, agriculture, and industrial applications, these containers are built for demanding operational conditions."
+                ]
             },
             {
                 title: "Mixing Tank",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Industrial-grade mixing tanks designed for blending and liquid processing applications.",
                 image: "/assets/propertyDetail/warehousing/Mixing-Tank.png",
+                about: [
+                    "Deffrail Systems’ Mixing Tanks are designed for efficient mixing, blending, and storage of liquids and semi-liquid materials across industrial and commercial applications. Built using seamless food-grade roto-moulded construction, the tanks offer excellent durability, chemical resistance, and easy cleaning.",
+                    "The smooth internal surface minimizes residue buildup while ensuring hygienic operations. Suitable for chemical processing, water treatment, food industries, and manufacturing operations, these tanks provide reliable long-term performance with minimal maintenance."
+                ]
             },
             {
                 title: "Cylindrical Vessel",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "High-quality cylindrical vessels designed for safe liquid storage and processing.",
                 image: "/assets/propertyDetail/warehousing/Cylindrical-Vessel.png",
+                about: [
+                    "The Cylindrical Vessel range is engineered for safe and efficient liquid storage in industrial, commercial, and processing environments. Manufactured using high-quality food-grade material, the vessels feature seamless construction, corrosion resistance, and smooth interiors for hygienic operations.",
+                    "Lightweight yet structurally strong, these vessels are easy to install, transport, and maintain. Their versatile design makes them suitable for chemical storage, liquid processing, water handling, and industrial utility applications."
+                ]
             },
             {
                 title: "Spillage Pallet",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Heavy-duty spill containment pallets designed for safe chemical and liquid handling.",
                 image: "/assets/propertyDetail/warehousing/Spillage-Pallet.png",
+                about: [
+                    "The Spillage Pallet is a heavy-duty containment platform designed to safely manage liquid leaks and chemical spills in industrial facilities. Manufactured using durable roto-moulded material, the pallet offers high chemical resistance, long operational life, and excellent load-bearing capacity.",
+                    "Equipped with integrated grating systems, it helps maintain workplace safety while supporting environmental compliance. Ideal for warehouses, chemical industries, factories, and storage areas, the spillage pallet ensures secure handling of drums and containers."
+                ]
             },
         ],
     },
@@ -243,18 +291,30 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "Mobile Toilet",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Portable sanitation units designed for hygienic use in remote and outdoor environments.",
                 image: "/assets/propertyDetail/sanitaryManagement/Mobile-Toilet.png",
+                about: [
+                    "The Mobile Toilet is a ready-to-use portable sanitation solution designed for construction sites, events, industrial facilities, labor camps, and remote locations. Manufactured using durable roto-moulded and FRP materials, the unit offers excellent strength, corrosion resistance, and easy maintenance in outdoor environments.",
+                    "Designed with proper ventilation, smooth interiors, and lightweight construction, the mobile toilet ensures hygienic usage while being easy to transport and relocate. Customization options including water tanks, septic tanks, and additional accessories make it suitable for diverse operational requirements."
+                ]
             },
             {
                 title: "Multi Urinal",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Compact multi-user urinal systems designed for high-footfall sanitation requirements.",
                 image: "/assets/propertyDetail/sanitaryManagement/Multi-Urinal.png",
+                about: [
+                    "The Multi Urinal system is a compact and efficient sanitation solution designed for high-footfall public and industrial environments. Built using durable corrosion-resistant materials, the structure is lightweight, easy to relocate, and designed for long-term outdoor use.",
+                    "Its modular design enables quick installation while providing hygienic and space-efficient sanitation facilities for labor camps, events, construction sites, public spaces, and institutional applications."
+                ]
             },
             {
                 title: "Multi Changing Room",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Portable changing room units designed for temporary and outdoor utility applications.",
                 image: "/assets/propertyDetail/sanitaryManagement/Multi-Changing-Room.png",
+                about: [
+                    "The Multi Changing Room is a portable and durable utility structure designed for changing, sanitation, and temporary accommodation support applications. Manufactured using roto-moulded construction, the unit provides excellent durability, weather resistance, and ease of maintenance.",
+                    "Lightweight and easy to transport, it is ideal for construction sites, industrial projects, events, sports facilities, and remote installations where flexible and hygienic changing infrastructure is required."
+                ]
             },
         ]
     },
@@ -273,9 +333,7 @@ export const SERVICES_DATA = {
             heading: "Engineered for Challenging and Remote Environments",
             content: [
                 "Deffrail Systems develops advanced lightweight composite infrastructure solutions suitable for remote, high altitude, and demanding environmental applications. Built using durable FRP and rotational moulding technologies, these systems are designed to support operational reliability in harsh climatic conditions.",
-
                 "The lightweight construction enables easier transportation and deployment in locations where conventional infrastructure systems can be difficult to install and maintain. Corrosion resistance, structural durability, and low maintenance performance make these solutions suitable for government, institutional, industrial, and infrastructure requirements operating in challenging terrains.",
-
                 "Focused on long term functionality and engineering efficiency, Deffrail Systems delivers infrastructure solutions built to perform in environments where durability and reliability are essential.",
             ],
             image: "/images/services/high-altitude-shelters/intro.jpg",
@@ -296,8 +354,12 @@ export const SERVICES_DATA = {
         productListing: [
             {
                 title: "FRP DIR Fire Retardant (High Altitude Resistant)",
-                description: "It is a long established fact that a reader will be distracted by the",
+                description: "Fire-retardant FRP shelters engineered for extreme weather and high-altitude environments.",
                 image: "/assets/propertyDetail/highAltitudeShelters/FRP-DIR.png",
+                about: [
+                    "The FRP DIR Fire Retardant High Altitude Shelter is a specialized lightweight structure engineered for extreme environmental conditions and high-altitude operations. Manufactured using advanced FRP composite materials with fire-retardant properties, the shelter offers exceptional thermal insulation, corrosion resistance, and structural durability in harsh climates.",
+                    "Designed to withstand snow loads, strong winds, moisture, and low temperatures, these shelters are ideal for defense installations, remote project sites, mountainous terrains, and emergency infrastructure applications. Their lightweight modular construction enables quick transportation, easy installation, and long-term operational reliability in demanding conditions."
+                ]
             },
         ]
     },

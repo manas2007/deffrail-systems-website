@@ -1,34 +1,40 @@
-import { Button } from "@mui/material";
 import styles from "./solutionStyles.module.css";
 import DButton from "../../global/dButton";
+import { useRouter } from "next/router";
 
 const items = [
   {
+    serviceId:"water-management",
     img: "/assets/home/S-1.png",
     title: "Water Management",
     desc: "Advanced FRP water storage solutions designed for durability, temperature stability and longevity.",
   },
   {
+    serviceId:"sewage-management",
     img: "/assets/home/S-2.png",
     title: "Sewage Management",
     desc: "Engineered sewage treatment systems that efficiently process and recycle wastewater.",
   },
   {
+    serviceId:"lightweight-frp-solutions",
     img: "/assets/home/S-3.png",
     title: "Lightweight Solutions",
     desc: "Innovative rotomoulded products that are strong, lightweight, and easy to install on site.",
   },
   {
+    serviceId:"warehousing-storage-solutions",
     img: "/assets/home/S-4.png",
     title: "Warehousing & Storage",
     desc: "Robust storage systems built using high-strength composites for industrial use.",
   },
   {
+    serviceId:"sanitary-management",
     img: "/assets/home/S-5.png",
     title: "Sanitary Management",
     desc: "Hygienic and ready-to-use sanitation solutions including mobile toilets and septic units.",
   },
   {
+    serviceId:"high-altitude-shelters",
     img: "/assets/home/S-6.png",
     title: "High Altitude Shelters",
     desc: "Designed to withstand harsh terrains and extreme weather while remaining lightweight.",
@@ -38,6 +44,12 @@ const items = [
 export const Solutions = (props) => {
 
   const { handleContactUs } = props;
+  const router = useRouter();
+
+  const handleProductClick = (serviceId) => {
+    console.log("Service Id ::",serviceId);
+    router.push(`/service/${serviceId}`);
+  }
 
   return (<section
     id="solutions"
@@ -82,11 +94,12 @@ export const Solutions = (props) => {
 
         {items.map((item) => (
           <article
+            onClick={() => handleProductClick(item.serviceId)}
             key={item.title}
             className={styles.solutionsCard}
           >
 
-            <div className={styles.solutionsImageWrapper}>
+            <div  className={styles.solutionsImageWrapper}>
               <img
                 src={item.img}
                 alt={item.title}
@@ -108,7 +121,10 @@ export const Solutions = (props) => {
               </p>
 
               <div className="mt-[1rem]">
-                <DButton text="Explore More" arrow="true" cta={handleContactUs} />
+                {/* <DButton text="Explore More" arrow="true" cta={() => handleProductClick(item.serviceId)} /> */}
+                <button onClick={() => handleProductClick(item.serviceId)} className="text-[#2e78bc] font-medium hover:underline cursor-pointer">
+                  Know More
+                </button>
               </div>
 
             </div>

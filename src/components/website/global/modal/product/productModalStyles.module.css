@@ -1,0 +1,31 @@
+.closeIcon {
+  background: #f6f9fe;
+  border: 1px solid #e8e8e8;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .closeIcon {
+    background: #f6f9fe;
+    border: 1px solid #e8e8e8;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

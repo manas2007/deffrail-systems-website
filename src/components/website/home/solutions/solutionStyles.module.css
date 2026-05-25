@@ -64,6 +64,7 @@
   background: var(--card-background);
   box-shadow: var(--shadow-soft);
   transition: 0.4s ease;
+  cursor: pointer;
 }
 
 .solutionsCard:hover {
